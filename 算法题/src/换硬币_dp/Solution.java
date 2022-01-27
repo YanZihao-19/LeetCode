@@ -14,13 +14,15 @@ import java.util.Scanner;
 public class Solution {
 
   public static int coinChange(int[] coins, int amount) {
-    // dp为一维状态数组，dp[i]表示i元钱最少硬币的组合个数
+    //1.定义dp数组 dp为一维状态数组，i表示总金额数,dp[i]表示i元钱最少硬币的组合个数
     int[] dp = new int[amount + 1];
-    //
+    //2.初始化dp数组(dp[0] = 0 其余项赋值为Integer.Max_VALUE)
     dp[0] = 0;
     int num = Integer.MAX_VALUE;
+    //4.遍历数组(赋值数组,从已知dp[0]开始),外层for遍历数组，内层for遍历不同金额的硬币
     for (int i = 1; i < dp.length; i++) {
       dp[i] = num;
+      //3.状态转移方程: dp[i] = Min(dp[i-1],dp[i-2],dp[i-5]) + 1
       for (int j = 0; j < coins.length; j++) {
         if (i - coins[j] >= 0 && dp[i - coins[j]] != num) {
           dp[i] = Integer.min(dp[i - coins[j]] + 1, dp[i]);
