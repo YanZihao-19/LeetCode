@@ -3,6 +3,7 @@ package Excel表列序号;
 /**
  * @author 燕子豪
  */
+
 public class Solution {
     public int titleToNumber(String columnTitle) {
     int number = 0;
