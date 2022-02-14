@@ -48,9 +48,7 @@
 // Related Topics 数学 动态规划 组合数学 👍 1256 👎 0
 package dp_不同路径62;
 
-/**
- * @author 燕子豪
- */
+/** @author 燕子豪 */
 public class Solution {
   public int uniquePaths(int m, int n) {
     // 1.定义dp数组
