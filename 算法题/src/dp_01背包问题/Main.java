@@ -2,7 +2,9 @@ package dp_01背包问题;
 
 import java.util.Scanner;
 
-/** @author 燕子豪 采用一维数组在空间上简化01背包问题 */
+/** @author 燕子豪 采用一维数组在空间上简化01背包问题
+ * 只有空间上的转化，并未简化时间复杂度
+ * */
 public class Main {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
