@@ -3,7 +3,7 @@ package dp_完全背包问题;
 import java.util.Scanner;
 
 /** @author 燕子豪
- * 将完全背包问题简化为两层循环
+ * 将完全背包问题减少为两层循环
  *简化思路:并不是那么好想,本质还是在基本做法的基础上,变换而来. 将dp[i-1][j-k*cap[i-1]]+k*val[i-1]转化为:dp[i][j - cap[i - 1]] + val[i - 1],减少了对k的循环
  * 即：发现dp[i-1][j-k*cap[i-1]]+k*val[i-1]的最大值与dp[i][j-vap[i-1]]只相差了一个val[i-1],至于怎么想出来的,或许是经验吧。
  */
