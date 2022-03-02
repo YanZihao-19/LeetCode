@@ -27,6 +27,9 @@ package dp_完全背包问题;
 
 import java.util.Scanner;
 
+/**
+ * @author 燕子豪
+ */
 public class Solution {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);

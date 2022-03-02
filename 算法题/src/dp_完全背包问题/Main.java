@@ -25,6 +25,7 @@ public class Main {
     }
 
     for (int i = 1; i <= n; i++) {
+      //这里必须是从小到大循环
       for (int j = 1; j <= v; j++) {
         if (j >= cap[i - 1]) {
           dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - cap[i - 1]] + val[i - 1]);
