@@ -52,7 +52,7 @@ public class Solution {
   }
   public int maxSubArray(int[] nums) {
     int m=nums.length;
-    //1.定义dp数组
+    //1.定义dp数组 dp[i]表示以第i个元素结尾的最大字串长度
     int[] dp=new int[m];
     //2.初始化值
     dp[0]=nums[0];
