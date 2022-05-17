@@ -18,7 +18,7 @@ import java.util.Scanner;
 /**
  * @author 燕子豪
  * 思路：本题思路并不难，就是遍历以每个二维数组元素为中心的九宫格，
- *     但是可以使用扩充辅助区的巧妙方法避免了对边界元素的讨论，值得学习。
+ *     但是可以使用扩充辅助区的巧妙方法避免了对边界元素的讨论，值得学习
  */
 public class Text {
   public static void main(String[] args) {
